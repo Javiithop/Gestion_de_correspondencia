@@ -1,0 +1,13 @@
+﻿@model ListaCorreosViewModel
+@ViewBag.CategoriaActual
+<h1>@Model.CategoriasCorreos</h1>
+@foreach (var correos in Model.Correos)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="caption">
+            <h3 class="pull-right">@correos.DescripCorreo</h3>
+            <h3><a>@correos.CodigoCorreo</a></h3>
+            <h3><a>@correos.NombreCorreo</a></h3>
+        </div>
+    </div>
+}

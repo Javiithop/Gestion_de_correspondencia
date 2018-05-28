@@ -1,0 +1,23 @@
+﻿@model WebAppDemo01.viewmodels.ListaCorreosViewModel
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Listado General de Correos</title>
+</head>
+<body>
+    <h1>@Model.CategoriasCorreos</h1>
+    @foreach(var correos in Model.Correos)
+    {
+        <div>
+            <h2>@correos.CodigoCorreo</h2>
+            <h3>@correos.NombreCorreo</h3>
+            <h4>@correos.DescripLargaCorreo</h4>
+
+        </div>
+
+    }
+</body>
+</html>
